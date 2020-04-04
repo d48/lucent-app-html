@@ -23,7 +23,7 @@ body {
   color: inherit;
   border: 0;
   background-color: transparent;
-  /* z-index: 10; */
+  z-index: 10;
 }
 .hamburger.is-active:hover,
 .hamburger:hover {
@@ -49,8 +49,8 @@ body {
 .hamburger-inner:after,
 .hamburger-inner:before {
   position: absolute;
-  width: 40px;
-  height: 4px;
+  width: 18px;
+  height: 2px;
   transition-timing-function: ease;
   transition-duration: 0.15s;
   transition-property: transform;
@@ -63,10 +63,10 @@ body {
   content: "";
 }
 .hamburger-inner:before {
-  top: -10px;
+  top: -5px;
 }
 .hamburger-inner:after {
-  bottom: -10px;
+  bottom: -5px;
 }
 .hamburger--3dx .hamburger-box {
   perspective: 80px;
@@ -84,10 +84,10 @@ body {
   background-color: transparent !important;
 }
 .hamburger--3dx.is-active .hamburger-inner:before {
-  transform: translate3d(0, 10px, 0) rotate(45deg);
+  transform: translate3d(0, 9px, 0) rotate(45deg);
 }
 .hamburger--3dx.is-active .hamburger-inner:after {
-  transform: translate3d(0, -10px, 0) rotate(-45deg);
+  transform: translate3d(0, -9px, 0) rotate(-45deg);
 }
 .hamburger--3dx-r .hamburger-box {
   perspective: 80px;
@@ -105,10 +105,10 @@ body {
   background-color: transparent !important;
 }
 .hamburger--3dx-r.is-active .hamburger-inner:before {
-  transform: translate3d(0, 10px, 0) rotate(45deg);
+  transform: translate3d(0, 9px, 0) rotate(45deg);
 }
 .hamburger--3dx-r.is-active .hamburger-inner:after {
-  transform: translate3d(0, -10px, 0) rotate(-45deg);
+  transform: translate3d(0, -9px, 0) rotate(-45deg);
 }
 .hamburger--3dy .hamburger-box {
   perspective: 80px;
@@ -126,10 +126,10 @@ body {
   background-color: transparent !important;
 }
 .hamburger--3dy.is-active .hamburger-inner:before {
-  transform: translate3d(0, 10px, 0) rotate(45deg);
+  transform: translate3d(0, 9px, 0) rotate(45deg);
 }
 .hamburger--3dy.is-active .hamburger-inner:after {
-  transform: translate3d(0, -10px, 0) rotate(-45deg);
+  transform: translate3d(0, -9px, 0) rotate(-45deg);
 }
 .hamburger--3dy-r .hamburger-box {
   perspective: 80px;
@@ -147,10 +147,10 @@ body {
   background-color: transparent !important;
 }
 .hamburger--3dy-r.is-active .hamburger-inner:before {
-  transform: translate3d(0, 10px, 0) rotate(45deg);
+  transform: translate3d(0, 9px, 0) rotate(45deg);
 }
 .hamburger--3dy-r.is-active .hamburger-inner:after {
-  transform: translate3d(0, -10px, 0) rotate(-45deg);
+  transform: translate3d(0, -9px, 0) rotate(-45deg);
 }
 .hamburger--3dxy .hamburger-box {
   perspective: 80px;
@@ -168,10 +168,10 @@ body {
   background-color: transparent !important;
 }
 .hamburger--3dxy.is-active .hamburger-inner:before {
-  transform: translate3d(0, 10px, 0) rotate(45deg);
+  transform: translate3d(0, 9px, 0) rotate(45deg);
 }
 .hamburger--3dxy.is-active .hamburger-inner:after {
-  transform: translate3d(0, -10px, 0) rotate(-45deg);
+  transform: translate3d(0, -9px, 0) rotate(-45deg);
 }
 .hamburger--3dxy-r .hamburger-box {
   perspective: 80px;
@@ -189,16 +189,16 @@ body {
   background-color: transparent !important;
 }
 .hamburger--3dxy-r.is-active .hamburger-inner:before {
-  transform: translate3d(0, 10px, 0) rotate(45deg);
+  transform: translate3d(0, 9px, 0) rotate(45deg);
 }
 .hamburger--3dxy-r.is-active .hamburger-inner:after {
-  transform: translate3d(0, -10px, 0) rotate(-45deg);
+  transform: translate3d(0, -9px, 0) rotate(-45deg);
 }
 .hamburger--arrow.is-active .hamburger-inner:before {
-  transform: translate3d(-8px, 0, 0) rotate(-45deg) scaleX(0.7);
+  transform: translate3d(-4px, 1px, 0) rotate(-45deg) scaleX(0.7);
 }
 .hamburger--arrow.is-active .hamburger-inner:after {
-  transform: translate3d(-8px, 0, 0) rotate(45deg) scaleX(0.7);
+  transform: translate3d(-4px, -1px, 0) rotate(45deg) scaleX(0.7);
 }
 .hamburger--arrow-r.is-active .hamburger-inner:before {
   transform: translate3d(8px, 0, 0) rotate(45deg) scaleX(0.7);
