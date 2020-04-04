@@ -6,7 +6,7 @@
  * @link https://github.com/jonsuh/hamburgers
  */
 body {
-  background-color: black;
+  background-color: #303030;
 }
 
 .hamburger {
@@ -24,6 +24,7 @@ body {
   border: 0;
   background-color: transparent;
   z-index: 10;
+  margin-top: 7px;
 }
 .hamburger.is-active:hover,
 .hamburger:hover {
