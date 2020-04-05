@@ -14,7 +14,7 @@ body {
   display: inline-block;
   overflow: visible;
   margin: 0;
-  padding: 15px;
+  padding: 20px 24px;
   cursor: pointer;
   transition-timing-function: linear;
   transition-duration: 0.15s;
@@ -24,7 +24,7 @@ body {
   border: 0;
   background-color: transparent;
   z-index: 10;
-  margin-top: 7px;
+  margin-top: 4px;
 }
 .hamburger.is-active:hover,
 .hamburger:hover {
@@ -38,8 +38,8 @@ body {
 .hamburger-box {
   position: relative;
   display: inline-block;
-  width: 40px;
-  height: 24px;
+  width: 18px;
+  height: 18px;
 }
 .hamburger-inner {
   top: 50%;
