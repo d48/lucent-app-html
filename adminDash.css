@@ -33,16 +33,44 @@ h1 {
 #client-menu {
   position: absolute;
   top: 32px;
+  left: -400px;
   height: 100vh;
   width: 370px;
-  background-color: rgba(38, 38, 38, 1);
-  z-index: -1;
+  background-color: rgb(38, 38, 38);
   text-align: left;
-  z-index: -1;
+  animation-duration: 1s;
+  animation-name: slideOut;
+  animation-fill-mode: forwards;
+}
+
+@keyframes slideOut {
+  from {
+    top: 32px;
+    left: 8px;
+  }
+  to {
+    top: 32px;
+    left: -400px;
+  }
 }
 
 #client-menu.change {
-  z-index: 2;
+  position: absolute;
+  z-index: 1;
+  animation-duration: 1s;
+  animation-name: slideIn;
+  animation-fill-mode: forwards;
+}
+
+@keyframes slideIn {
+  from {
+    top: 32px;
+    left: -400px;
+  }
+  to {
+    top: 32px;
+    left: 8px;
+  }
 }
 
 #placeHolder {
