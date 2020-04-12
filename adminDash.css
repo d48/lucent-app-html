@@ -21,13 +21,26 @@ html {
 }
 
 h1 {
-  display: block;
+  padding-top: 64px;
+  padding-left: 26px;
+  display: inline-block;
   font-weight: normal;
   font-size: 18px;
 }
 
-.logo {
-  width: 100px;
+#createClient {
+  display: inline;
+}
+
+#clientSearch {
+  font-family: "Roboto", sans-serif;
+  width: 85%;
+  margin-left: 26px;
+  font-size: 36px;
+}
+
+#clients li {
+  font-size: 16px;
 }
 
 #client-menu {
@@ -38,18 +51,17 @@ h1 {
   width: 370px;
   background-color: rgb(38, 38, 38);
   text-align: left;
-  animation-duration: 1s;
+  animation-duration: 0.25s;
   animation-name: slideOut;
   animation-fill-mode: forwards;
+  animation-timing-function: ease-out;
 }
 
 @keyframes slideOut {
   from {
-    top: 32px;
     left: 8px;
   }
   to {
-    top: 32px;
     left: -400px;
   }
 }
@@ -57,54 +69,130 @@ h1 {
 #client-menu.change {
   position: absolute;
   z-index: 1;
-  animation-duration: 1s;
+  top: 32px;
+  animation-duration: 0.25s;
   animation-name: slideIn;
   animation-fill-mode: forwards;
+  animation-timing-function: ease-out;
 }
 
 @keyframes slideIn {
   from {
-    top: 32px;
     left: -400px;
   }
   to {
-    top: 32px;
     left: 8px;
   }
 }
 
-#placeHolder {
-  font-size: 14px;
+.arrow::after,
+.arrow .arrow::after {
+  border-color: white;
+}
+.arrow {
+  display: inline-block;
+  height: 12px;
+  position: relative;
+  width: 12px;
+  z-index: 9999;
 }
 
-.App {
-  text-align: center;
+.arrow::after {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-right-style: solid;
+  border-right-width: 2px;
+  content: "";
+  display: inline-block;
+  height: 8px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 8px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.arrow.is-right {
+  -moz-transform: rotate(315deg);
+  -ms-transform: rotate(315deg);
+  -webkit-transform: rotate(315deg);
+  transform: rotate(315deg);
 }
 
 .App-header {
   background-color: #212121;
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  height: 68px;
+  width: 100%;
   align-items: center;
-  justify-content: left;
-  font-size: calc(10px + 2vmin);
-  color: white;
-  height: 64px;
+  grid-template: "leftHeader rightHeader";
   box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.12), 0 4px 4px 0 rgba(0, 0, 0, 0.24);
+}
+
+.leftHeader {
+  grid-area: leftHeader;
+  display: flex;
+  align-items: center;
+}
+
+.rightHeader {
+  grid-area: rightHeader;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 }
 
 .top-header {
   background-color: #000;
   height: 24px;
+}
+
+.logo {
+  position: relative;
+  display: inline-block;
+  width: 100px;
+}
+
+.userContainer {
+  display: inline-block;
+  padding-right: 20px;
+}
+
+.userCircle {
+  -webkit-background-size: 32px 32px;
+  background-size: 32px 32px;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0;
+  overflow: hidden;
+  height: 49px;
+  width: 49px;
+  background-color: white;
+}
+
+.threeDot_container {
+  height: 16px;
+  width: 4px;
+  cursor: pointer;
+  display: inline-block;
+  padding-right: 24px;
+}
+
+.threeDot_container span {
+  background: white;
+  border: none;
+  height: 4px;
+  width: 4px;
+  position: relative;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-bottom: 2px;
+  display: block;
+}
+
+#placeHolder {
+  font-size: 14px;
+  top: 42px;
+  display: inline-block;
+  padding-right: 19px;
 }

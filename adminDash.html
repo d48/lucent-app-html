@@ -24,16 +24,43 @@
       <div class="App">
         <section class="top-header"></section>
         <header class="App-header">
-          <div
-            id="hamburger-menu"
-            class="hamburger hamburger--arrow js-hamburger"
-          >
-            <div class="hamburger-box">
-              <div class="hamburger-inner"></div>
+          <section class="leftHeader">
+            <div
+              id="hamburger-menu"
+              class="hamburger hamburger--arrow js-hamburger"
+            >
+              <div class="hamburger-box">
+                <div class="hamburger-inner"></div>
+              </div>
             </div>
-          </div>
+          </section>
           <img class="logo" src="LUCENTlogoDarkerBG.png" alt="LUCENT logo" />
-          <section class="client-menu" id="client-menu"></section>
+          <section class="rightHeader">
+            <p id="placeHolder">Welcome back user</p>
+            <div class="userContainer">
+              <span class="userCircle"></span>
+            </div>
+            <div id="threeDotMenu" class="threeDot_container">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </section>
+          <section class="client-menu" id="client-menu">
+            <h1>Clients</h1>
+            <button id="createClient">Create Client</button>
+            <input
+              type="search"
+              id="clientSearch"
+              placeholder="Search Clients"
+            />
+            <ul id="clients">
+              <li>Johnathon <span class="arrow is-right"></span></li>
+              <li>Ryan</li>
+              <li></li>
+              <li></li>
+            </ul>
+          </section>
         </header>
       </div>
     </div>
