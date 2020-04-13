@@ -39,7 +39,7 @@ body {
   position: relative;
   display: inline-block;
   width: 18px;
-  height: 18px;
+  height: 12px;
 }
 .hamburger-inner {
   top: 50%;
