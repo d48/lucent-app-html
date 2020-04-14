@@ -45,8 +45,14 @@ h1 {
 #clientSearch {
   font-family: "Roboto", sans-serif;
   width: 85%;
+  height: 36px;
   margin-left: 26px;
-  font-size: 36px;
+  padding-left: 10px;
+  font-size: 17px;
+  background-color: var(--main-bg-color);
+  border-radius: 10px;
+  border: 0;
+  color: white;
 }
 
 #clients li {
