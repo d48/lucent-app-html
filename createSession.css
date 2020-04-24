@@ -27,7 +27,9 @@
 }
 .sessionSaved {
   position: absolute;
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: #222;
   height: 145px;
   width: 413px;
@@ -37,6 +39,8 @@
 }
 
 .sessionSaved h2 {
+  padding: 0;
+  margin: 0;
   font-size: 36px;
 }
 
