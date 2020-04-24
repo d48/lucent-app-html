@@ -1,8 +1,9 @@
-body, html {
-	background-color: #303030;
-	height: 100%;
+body,
+html {
+  background-color: #303030;
+  height: 100%;
   display: grid;
-	box-sizing: border-box;
+  box-sizing: border-box;
   color: #d8d8d8;
   font-family: "Roboto", sans-serif;
   box-sizing: border-box;
@@ -12,7 +13,10 @@ a {
   color: #d8d8d8;
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   font-weight: normal;
 }
 
@@ -50,7 +54,7 @@ h3 {
   color: white;
 
   height: 64px;
-  box-shadow: 0 0 4px 0 rgba(0,0,0,0.12), 0 4px 4px 0 rgba(0,0,0,0.24);
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.12), 0 4px 4px 0 rgba(0, 0, 0, 0.24);
 }
 
 .top-header {
@@ -77,19 +81,19 @@ nav + div {
 
 /* Preview */
 .container {
- 	display: flex;
+  display: flex;
   justify-content: center;
   align-items: center;
-	width: 100%;
+  width: 100%;
   margin-top: 50px;
 }
 
 .path {
-	position: relative;
+  position: relative;
   width: 90%;
   height: 80px;
   background-color: transparent;
-	padding-right: 80px;
+  padding-right: 80px;
 }
 
 .shape {
@@ -97,14 +101,13 @@ nav + div {
   background-color: red;
   width: 80px;
   height: 80px;
-	border-radius: 80px;
+  border-radius: 80px;
   display: block;
-	top: 0;
+  top: 0;
 
   x-transition: all 1s ease-out;
   animation: ani 4s infinite;
 }
-
 
 @keyframes ani {
   0% {
@@ -113,7 +116,7 @@ nav + div {
 
   50% {
     left: 100%;
-		right: 0;
+    right: 0;
   }
 
   100% {
@@ -137,7 +140,8 @@ nav button {
   padding: 26px;
 }
 
-.shape-circle, .shape-square {
+.shape-circle,
+.shape-square {
   background-color: #fff;
   width: 22px;
   height: 22px;
@@ -145,4 +149,12 @@ nav button {
 
 .shape-circle {
   border-radius: 22px;
+}
+
+.btn {
+  border-radius: 8px;
+  height: 35px;
+  width: 114px;
+  font-size: 18px;
+  background-color: #ffffff;
 }

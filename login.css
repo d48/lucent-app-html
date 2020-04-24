@@ -37,17 +37,6 @@ body {
   height: 237px;
 }
 
-input {
-  border-style: none;
-  background-color: #222222;
-  border-bottom: 2px solid var(--main-text-color);
-  color: var(--main-text-color);
-  height: 35px;
-  width: 80%;
-  font-size: 18px;
-  font-family: "Roboto", sans-serif;
-}
-
 #email {
   margin-top: 55px;
   margin-bottom: 27px;
@@ -55,14 +44,6 @@ input {
 
 #password {
   margin-bottom: 18px;
-}
-
-#login-btn {
-  border-radius: 8px;
-  height: 35px;
-  width: 114px;
-  font-size: 18px;
-  background-color: #ffffff;
 }
 
 .register {

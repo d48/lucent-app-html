@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link href="global.css" rel="stylesheet" />
+    <link href="adminDash.css" rel="stylesheet" />
+    <link href="hambMenuBtn.css" rel="stylesheet" />
+    <link href="createSession.css" rel="stylesheet" />
+    <script defer src="hambMenuBtn.js"></script>
+    <title>Lucent</title>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root">
+      <div class="App">
+        <section class="top-header"></section>
+        <header class="App-header">
+          <section class="leftHeader">
+            <div
+              id="hamburger-menu"
+              class="hamburger hamburger--arrow js-hamburger"
+            >
+              <div class="hamburger-box">
+                <div class="hamburger-inner"></div>
+              </div>
+            </div>
+            <img class="logo" src="LUCENTlogoDarkerBG.png" alt="LUCENT logo" />
+          </section>
+          <section class="rightHeader">
+            <p id="placeHolder">Welcome back user</p>
+            <div class="userContainer">
+              <span class="userCircle"></span>
+            </div>
+            <div id="threeDotMenu" class="threeDot_container">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </section>
+        </header>
+      </div>
+      <section class="sessionBar">
+        <h1 class="sessionBar">
+          User
+          <p>|</p>
+          <button class="sessionBtns">Settings</button>
+          <button class="sessionBtns">Save</button>
+          <span id="share-btn-icon"></span>
+        </h1>
+        <section class="saveShareContainer">
+          <section class="sessionSaved">
+            <h2>Session Saved!</h2>
+          </section>
+          <section class="shareSession">
+            <h3>Share:</h3>
+            <input
+              type="email"
+              class="email"
+              id="shareEmail"
+              placeholder="Email address"
+            />
+            <button class="btn" id="shareBtn" type="submit">Send</button>
+          </section>
+        </section>
+      </section>
+    </div>
+  </body>
+</html>
