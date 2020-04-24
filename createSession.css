@@ -33,7 +33,7 @@
   width: 413px;
   border-radius: 8px;
   z-index: 9;
-  bottom: 103px;
+  top: 235px;
 }
 
 .sessionSaved h2 {
@@ -48,7 +48,7 @@
   height: 145px;
   width: 413px;
   border-radius: 8px;
-  bottom: 103px;
+  top: 235px;
 }
 .shareSession h3 {
   padding-left: 30px;
