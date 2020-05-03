@@ -53,9 +53,11 @@
   width: 413px;
   border-radius: 8px;
   top: 235px;
+  z-index: 10;
 }
 .shareSession h3 {
   padding-left: 30px;
+  font-size: 18px;
 }
 
 #shareBtn {
@@ -68,6 +70,7 @@
 #shareEmail {
   margin-left: 30px;
   width: 269px;
+  font-size: 18px;
 }
 
 /* .... share button icon .... */
